@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <title>Library</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <iconify-icon icon="clarity:library-solid" class="logo-icon"></iconify-icon>
+                    <h2>The Odin Library</h2>
+                </div>
+                <button class="btn-add">Add Book</button>
+            </header>
+            <main class="main">
+            <div class="books">
+                    <ul class="books-list">
+
+                    </ul>
+            </div> 
+            <!-- Dialog -->
+            <dialog class="dialog">
+                        <div class="dialog-header">
+                            <h2>New Book</h3>
+                            <button class="btn-close">Close</button>
+                        </div>
+                        <form method="dialog" class="dialog-form">
+                            
+                                <div>
+                                    <label for="title">Title</label>
+                                    <input id="title" name="title" minlength="3" maxlength="50" type="text" placeholder="Enter title " required>
+                                </div>
+            
+                                <div>
+                                    <label for="author">Author</label>
+                                    <input id="author" name="author" minlength="3" maxlength="25" type="text" placeholder="Enter name" required>
+                                </div>
+            
+                                <div>
+                                    <label for="pages">Pages</label>
+                                    <input id="pages" name="pages" type="number" min="1" max="2000" required>
+                                </div>
+            
+                                <div>
+                                    <label for="read-status">Read status</label>
+                                    <select id="read-status" name="read">
+                                        <option value="notread" selected>Not read</option>
+                                        <option value="read">Read</option>
+                                    </select>
+                                </div>
+                            
+                        <button type="submit" class="btn-submit">Add<iconify-icon icon="material-symbols:add" class="icon-add"></iconify-icon></button>
+                        </form>
+            </dialog>
+            </main>
+        </div>
+        
+        <script src="./script.js"></script>
+    </body>
+</html>

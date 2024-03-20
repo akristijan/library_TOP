@@ -1,0 +1,138 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
+  *, ::after, ::before {
+    
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  iconify-icon {
+    display: inline-block;
+    
+ }
+
+  .container {
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: #cad2c5;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #B5838D;
+    padding: 1rem;
+  }
+
+  .btn-add {
+    align-self: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    
+    font-size: 2rem;
+  }
+
+  .main {
+    background-color: #FFCDB2;
+  }
+
+  .dialog {
+    background-color: #9d8189;
+    width: 26rem;
+  }
+
+  .dialog-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+  }
+
+  .dialog-form {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) auto;
+    gap: 10px;
+  }
+
+  .btn-close {
+    align-self: center;
+  }
+
+  .btn-submit {
+    align-self: center;
+  }
+
+  .icon-add {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  /* Style for input field of type text */
+input,
+select
+ {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+/* Hover and focus styles for input field */
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Placeholder text style */
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+
+/* Style for button */
+button {
+  
+  padding: 15px 25px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: #FFB4A2;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Active state for button */
+button:active {
+  transform: translateY(1px);
+}
